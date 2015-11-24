@@ -1,17 +1,17 @@
 package com.jetperu.remesa.bean;
 
-import java.util.Calendar;
+import com.google.gson.Gson;
 
 public class RemesaBean {
 
-	private Integer numero;
+	private Integer Numero;
 	private Integer PIN;
 
-	private double monto;
-	private String estado;
-	private String fecha;
-	private String nombreAgencia;
-	private String nombreMoneda;
+	private double Monto;
+	private String Estado;
+	private String Fecha;
+	private String NombreAgencia;
+	private String NombreMoneda;
 
 	public Integer getPIN() {
 		return PIN;
@@ -20,52 +20,58 @@ public class RemesaBean {
 	public void setPIN(Integer pIN) {
 		PIN = pIN;
 	}
-
+	
 	public Integer getNumero() {
-		return numero;
+		return Numero;
 	}
 
 	public void setNumero(Integer numero) {
-		this.numero = numero;
+		Numero = numero;
 	}
 
 	public double getMonto() {
-		return monto;
+		return Monto;
 	}
 
 	public void setMonto(double monto) {
-		this.monto = monto;
+		Monto = monto;
 	}
 
 	public String getEstado() {
-		return estado;
+		return Estado;
 	}
 
 	public void setEstado(String estado) {
-		this.estado = estado;
+		Estado = estado;
 	}
 
 	public String getFecha() {
-		return fecha;
+		return Fecha;
 	}
 
 	public void setFecha(String fecha) {
-		this.fecha = fecha;
+		Fecha = fecha;
 	}
 
 	public String getNombreAgencia() {
-		return nombreAgencia;
+		return NombreAgencia;
 	}
 
 	public void setNombreAgencia(String nombreAgencia) {
-		this.nombreAgencia = nombreAgencia;
+		NombreAgencia = nombreAgencia;
 	}
 
 	public String getNombreMoneda() {
-		return nombreMoneda;
+		return NombreMoneda;
 	}
 
 	public void setNombreMoneda(String nombreMoneda) {
-		this.nombreMoneda = nombreMoneda;
+		NombreMoneda = nombreMoneda;
 	}
+
+	@Override
+	public String toString() {
+		return new Gson().toJson(this);
+	}
+	
 }

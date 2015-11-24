@@ -23,13 +23,13 @@ $(document).ready(function($) {
 						$('#tablaBusqueda').show();
 						 html = '';
 					     html += '<tr>';
-					     html += 	'<td>'+result.remesa.numero+'</td>';
+					     html += 	'<td>'+result.remesa.Numero+'</td>';
 					     html += 	'<td>'+result.remesa.PIN+'</td>';
-					     html += 	'<td>'+result.remesa.fecha+'</td>';
-					     html += 	'<td>'+result.remesa.nombreAgencia+'</td>';
-					     html += 	'<td>'+result.remesa.nombreMoneda+'</td>';
-					     html += 	'<td>'+result.remesa.monto+'</td>';
-					     html += 	'<td>'+result.remesa.estado+'</td>';
+					     html += 	'<td>'+result.remesa.Fecha+'</td>';
+					     html += 	'<td>'+result.remesa.NombreAgencia+'</td>';
+					     html += 	'<td>'+result.remesa.NombreMoneda+'</td>';
+					     html += 	'<td>'+result.remesa.Monto+'</td>';
+					     html += 	'<td>'+result.remesa.Estado+'</td>';
 					     html += '</tr>';
 					     
 					     $('#tBodyBusqueda').html(html);
