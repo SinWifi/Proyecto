@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidDSD</string>    
+    <string name="action_settings">Settings</string>
+    <string name="buscar">Buscar</string>
+    <string name="numeroRemesa">Número de Remesa</string>
+    <string name="numero">Número</string>
+    <string name="fecha">Fecha</string>
+    <string name="agencia">Agencia</string>
+    <string name="moneda">Moneda</string>
+    <string name="monto">Monto</string>
+    <string name="estado">Estado</string>
+
+</resources>
