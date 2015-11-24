@@ -28,7 +28,7 @@ namespace SOAPServices
             Remesa remesa = new Remesa()
             {
                 PIN = pin,
-                Fecha = fecha,
+                Fecha = fecha.ToString(),
                 Agencia = agencia,
                 Moneda = moneda,
                 Monto = monto,
@@ -49,7 +49,7 @@ namespace SOAPServices
             {
                 Numero = numero,
                 PIN = pin,
-                Fecha = fecha,
+                Fecha = fecha.ToString(),
                 Agencia = agencia,
                 Moneda = moneda,
                 Monto = monto,

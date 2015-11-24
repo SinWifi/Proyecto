@@ -57,3 +57,14 @@ D:\workspace\visual\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
 D:\workspace\visual\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
 C:\Users\USUARIO\Desktop\PROYECTO-IRVIN\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Desktop\PROYECTO-IRVIN\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\DSD.AccesoDatos.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\DSD.Entidades.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\NHibernate.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\DSD.AccesoDatos.pdb
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\DSD.Entidades.pdb
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb

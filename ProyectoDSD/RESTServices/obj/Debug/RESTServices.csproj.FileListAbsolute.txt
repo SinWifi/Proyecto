@@ -10,3 +10,14 @@ D:\workspace\visual\ProyectoDSD\RESTServices\bin\DSD.Entidades.pdb
 D:\workspace\visual\ProyectoDSD\RESTServices\obj\Debug\RESTServices.csprojResolveAssemblyReference.cache
 D:\workspace\visual\ProyectoDSD\RESTServices\obj\Debug\RESTServices.dll
 D:\workspace\visual\ProyectoDSD\RESTServices\obj\Debug\RESTServices.pdb
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\bin\RESTServices.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\bin\RESTServices.pdb
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\bin\DSD.AccesoDatos.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\bin\DSD.Entidades.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\bin\NHibernate.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\bin\Iesi.Collections.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\bin\DSD.AccesoDatos.pdb
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\bin\DSD.Entidades.pdb
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\obj\Debug\RESTServices.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\obj\Debug\RESTServices.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServices\obj\Debug\RESTServices.pdb

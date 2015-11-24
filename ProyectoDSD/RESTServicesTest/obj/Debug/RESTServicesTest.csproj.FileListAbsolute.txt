@@ -5,3 +5,10 @@ D:\workspace\visual\ProyectoDSD\RESTServicesTest\bin\Debug\DSD.Entidades.pdb
 D:\workspace\visual\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.csprojResolveAssemblyReference.cache
 D:\workspace\visual\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.dll
 D:\workspace\visual\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.pdb
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\bin\Debug\RESTServicesTest.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\bin\Debug\RESTServicesTest.pdb
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\bin\Debug\DSD.Entidades.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\bin\Debug\DSD.Entidades.pdb
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.dll
+C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.pdb
