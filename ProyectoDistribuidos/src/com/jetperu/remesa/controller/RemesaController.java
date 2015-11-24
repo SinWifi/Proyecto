@@ -118,7 +118,20 @@ public class RemesaController {
 			conn.setRequestMethod("GET");
 			conn.setRequestProperty("Accept", "application/json");
 			
-			
+			if (conn.getResponseCode() == 500) {
+				String contenido = IOUtils.toString(conn.getErrorStream());
+				mensaje = contenido;
+				if (mensaje.endsWith("no existe\"")) {
+					resultado = 2;
+				} else if(mensaje.endsWith("estar actualizada\"")) {
+					resultado = 1;
+				}
+			} else {
+				String contenido = IOUtils.toString(conn.getInputStream());
+				remesaRestBean =  new Gson().fromJson(contenido, RemesaRestBean.class);
+				remesaRestBean.setNombreAgencia(remesaRestBean.getAgencia().getNombre());
+				remesaRestBean.setNombreMoneda(remesaRestBean.getMoneda().getNombre());
+			}
 		} catch (Exception e) {
 			throw new Exception("No se pudo conectar a la URL");
 		} finally {
