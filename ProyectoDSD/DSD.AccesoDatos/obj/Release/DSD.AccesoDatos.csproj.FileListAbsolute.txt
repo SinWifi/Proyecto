@@ -1,0 +1,9 @@
+D:\workspace\visual\ProyectoDSD\DSD.AccesoDatos\bin\Release\DSD.AccesoDatos.dll
+D:\workspace\visual\ProyectoDSD\DSD.AccesoDatos\bin\Release\DSD.AccesoDatos.pdb
+D:\workspace\visual\ProyectoDSD\DSD.AccesoDatos\bin\Release\DSD.Entidades.dll
+D:\workspace\visual\ProyectoDSD\DSD.AccesoDatos\bin\Release\Iesi.Collections.dll
+D:\workspace\visual\ProyectoDSD\DSD.AccesoDatos\bin\Release\NHibernate.dll
+D:\workspace\visual\ProyectoDSD\DSD.AccesoDatos\bin\Release\DSD.Entidades.pdb
+D:\workspace\visual\ProyectoDSD\DSD.AccesoDatos\obj\Release\DSD.AccesoDatos.csprojResolveAssemblyReference.cache
+D:\workspace\visual\ProyectoDSD\DSD.AccesoDatos\obj\Release\DSD.AccesoDatos.dll
+D:\workspace\visual\ProyectoDSD\DSD.AccesoDatos\obj\Release\DSD.AccesoDatos.pdb

@@ -1,0 +1,12 @@
+D:\workspace\visual\ProyectoDSD\RESTServices\bin\RESTServices.dll.config
+D:\workspace\visual\ProyectoDSD\RESTServices\bin\RESTServices.dll
+D:\workspace\visual\ProyectoDSD\RESTServices\bin\RESTServices.pdb
+D:\workspace\visual\ProyectoDSD\RESTServices\bin\DSD.AccesoDatos.dll
+D:\workspace\visual\ProyectoDSD\RESTServices\bin\DSD.Entidades.dll
+D:\workspace\visual\ProyectoDSD\RESTServices\bin\NHibernate.dll
+D:\workspace\visual\ProyectoDSD\RESTServices\bin\Iesi.Collections.dll
+D:\workspace\visual\ProyectoDSD\RESTServices\bin\DSD.AccesoDatos.pdb
+D:\workspace\visual\ProyectoDSD\RESTServices\bin\DSD.Entidades.pdb
+D:\workspace\visual\ProyectoDSD\RESTServices\obj\Release\RESTServices.csprojResolveAssemblyReference.cache
+D:\workspace\visual\ProyectoDSD\RESTServices\obj\Release\RESTServices.dll
+D:\workspace\visual\ProyectoDSD\RESTServices\obj\Release\RESTServices.pdb

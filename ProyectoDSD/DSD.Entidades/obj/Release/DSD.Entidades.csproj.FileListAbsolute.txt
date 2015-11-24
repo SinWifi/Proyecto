@@ -1,0 +1,5 @@
+D:\workspace\visual\ProyectoDSD\DSD.Entidades\bin\Release\DSD.Entidades.dll
+D:\workspace\visual\ProyectoDSD\DSD.Entidades\bin\Release\DSD.Entidades.pdb
+D:\workspace\visual\ProyectoDSD\DSD.Entidades\obj\Release\DSD.Entidades.csprojResolveAssemblyReference.cache
+D:\workspace\visual\ProyectoDSD\DSD.Entidades\obj\Release\DSD.Entidades.dll
+D:\workspace\visual\ProyectoDSD\DSD.Entidades\obj\Release\DSD.Entidades.pdb

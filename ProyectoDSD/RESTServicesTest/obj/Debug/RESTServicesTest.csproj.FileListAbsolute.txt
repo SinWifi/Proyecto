@@ -1,0 +1,7 @@
+D:\workspace\visual\ProyectoDSD\RESTServicesTest\bin\Debug\RESTServicesTest.dll
+D:\workspace\visual\ProyectoDSD\RESTServicesTest\bin\Debug\RESTServicesTest.pdb
+D:\workspace\visual\ProyectoDSD\RESTServicesTest\bin\Debug\DSD.Entidades.dll
+D:\workspace\visual\ProyectoDSD\RESTServicesTest\bin\Debug\DSD.Entidades.pdb
+D:\workspace\visual\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.csprojResolveAssemblyReference.cache
+D:\workspace\visual\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.dll
+D:\workspace\visual\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.pdb

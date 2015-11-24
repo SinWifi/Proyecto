@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\workspace\Hosting</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/DSD.AccesoDatos.dll">
+      <publishTime>11/22/2015 21:09:20</publishTime>
+    </File>
+    <File Include="bin/DSD.AccesoDatos.pdb">
+      <publishTime>11/22/2015 21:10:04</publishTime>
+    </File>
+    <File Include="bin/DSD.Entidades.dll">
+      <publishTime>11/22/2015 21:09:20</publishTime>
+    </File>
+    <File Include="bin/DSD.Entidades.pdb">
+      <publishTime>11/22/2015 21:10:03</publishTime>
+    </File>
+    <File Include="bin/Iesi.Collections.dll">
+      <publishTime>11/13/2015 16:46:47</publishTime>
+    </File>
+    <File Include="bin/NHibernate.dll">
+      <publishTime>11/13/2015 16:46:48</publishTime>
+    </File>
+    <File Include="bin/RESTServices.dll">
+      <publishTime>11/22/2015 22:52:13</publishTime>
+    </File>
+    <File Include="bin/RESTServices.pdb">
+      <publishTime>11/22/2015 21:25:48</publishTime>
+    </File>
+    <File Include="Remesas.svc">
+      <publishTime>11/22/2015 15:40:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/22/2015 22:34:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
