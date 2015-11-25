@@ -29,6 +29,7 @@ namespace RESTServices
             validarHora();
             Remesa remesa = DAO.Obtener(Int32.Parse(numero));
             validarRemesa(remesa);
+            validarEstado(remesa);
             return remesa;
         }
 
@@ -49,6 +50,14 @@ namespace RESTServices
             if (remesa == null)
             {
                 throw new WebFaultException<string>("La remesa buscada no existe", System.Net.HttpStatusCode.InternalServerError);
+            }
+        }
+
+        private void validarEstado(Remesa remesa)
+        {
+            if (remesa.Estado.Equals("Extornado"))
+            {
+                throw new WebFaultException<string>("La remesa ha sido extornada y no puede ser consultada", System.Net.HttpStatusCode.InternalServerError);
             }
         }
     }

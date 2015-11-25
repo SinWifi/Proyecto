@@ -64,5 +64,33 @@ namespace RESTServicesTest
                 Assert.AreEqual("La remesa buscada no existe", mensaje);
             }
         }
+
+        [TestMethod]
+        public void RemesaExtornada()
+        {
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:61010/Remesas.svc/Remesas/3");
+            req.Method = "GET";
+            HttpWebResponse res = null;
+            try
+            {
+                res = (HttpWebResponse)req.GetResponse();
+                StreamReader reader = new StreamReader(res.GetResponseStream());
+                String cadenaJson = reader.ReadToEnd();
+                JavaScriptSerializer js = new JavaScriptSerializer();
+                Remesa remesa = js.Deserialize<Remesa>(cadenaJson);
+                Assert.AreEqual(3, remesa.Numero);
+                Assert.AreEqual("Extornado", remesa.Estado);
+            }
+            catch (WebException e)
+            {
+                HttpStatusCode code = ((HttpWebResponse)e.Response).StatusCode;
+                String description = ((HttpWebResponse)e.Response).StatusDescription;
+                StreamReader reader = new StreamReader(e.Response.GetResponseStream());
+                String cadenaJson = reader.ReadToEnd();
+                JavaScriptSerializer js = new JavaScriptSerializer();
+                String mensaje = js.Deserialize<String>(cadenaJson);
+                Assert.AreEqual("La remesa ha sido extornada y no puede ser consultada", mensaje);
+            }
+        }
     }
 }
