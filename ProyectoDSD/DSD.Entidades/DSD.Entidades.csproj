@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Agencia.cs" />
     <Compile Include="Moneda.cs" />
+    <Compile Include="Observacion.cs" />
     <Compile Include="Remesa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
