@@ -51,6 +51,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="ConexionUtil.cs" />
     <Compile Include="NHibernateHelper.cs" />
+    <Compile Include="ObservacionDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemesaDAO.cs" />
   </ItemGroup>
