@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">AndroidDSD</string>   
+    <string name="app_name">AndroidDSD</string>
     
     <string name="buscar">Buscar</string>
     <string name="numeroRemesa">Número de Remesa</string>
