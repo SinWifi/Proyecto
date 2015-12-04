@@ -114,7 +114,7 @@ public class BusquedaRemesaActivity extends Activity implements OnClickListener 
 		protected void onPreExecute() {
 			super.onPreExecute();
 			progressDialog.setTitle("Please wait...");
-			progressDialog.show();			
+			progressDialog.show();
 		}	
 		
 		@Override
