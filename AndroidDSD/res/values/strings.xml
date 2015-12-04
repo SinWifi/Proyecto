@@ -11,5 +11,9 @@
     <string name="moneda">Moneda</string>
     <string name="monto">Monto</string>
     <string name="estado">Estado</string>
+    
+    <string name="consultaRemesa">Consulta Remesa</string>
+    <string name="busquedaRemesa">Búsqueda Remesa</string>
+    <string name="registroObservacion">Registro Observación</string>
 
 </resources>
