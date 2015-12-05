@@ -55,7 +55,7 @@ namespace RESTServicesTest
             }
             catch (WebException e)
             {
-                HttpStatusCode code = ((HttpWebResponse)e.Response).StatusCode;
+                HttpStatusCode code = ((HttpWebResponse)e.Response).StatusCode; 
                 String description = ((HttpWebResponse)e.Response).StatusDescription;
                 StreamReader reader = new StreamReader(e.Response.GetResponseStream());
                 String cadenaJson = reader.ReadToEnd();
