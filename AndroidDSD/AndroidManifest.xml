@@ -15,22 +15,33 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.androiddsd.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name="com.example.androiddsd.BusquedaRemesaActivity"
-            android:parentActivityName="com.example.androiddsd.MainActivity">
-            </activity>
+            android:parentActivityName="com.example.androiddsd.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.androiddsd.ListadoObservacionesActivity"
+            android:parentActivityName="com.example.androiddsd.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.androiddsd.ObservacionActivity"
+            android:parentActivityName="com.example.androiddsd.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -46,7 +47,7 @@ public class BusquedaRemesaActivity extends Activity implements OnClickListener 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.busquedaremesa, menu);
         return true;
     }
 
@@ -54,7 +55,11 @@ public class BusquedaRemesaActivity extends Activity implements OnClickListener 
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.actObservacion) {
-            return true;
+        	if(mRemesa!=null){
+	        	Intent intent = new Intent(this, ObservacionActivity.class);
+	        	intent.putExtra("REMESA", mRemesa);
+				startActivity(intent);
+        	}
         }
         return super.onOptionsItemSelected(item);
     }
@@ -136,7 +141,7 @@ public class BusquedaRemesaActivity extends Activity implements OnClickListener 
 	        	}else{
 	        		Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
 	        		JSONObject respJSON = new JSONObject(respStr);
-	        		mRemesa = gson.fromJson(respJSON.toString(), Remesa.class);	        		
+	        		mRemesa = gson.fromJson(respJSON.toString(), Remesa.class);
 	        	}
 	        }
 	        catch(Exception ex)

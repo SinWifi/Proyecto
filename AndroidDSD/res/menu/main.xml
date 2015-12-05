@@ -3,10 +3,10 @@
     tools:context="com.example.prueba.MainActivity" >
 
     <item
-        android:id="@+id/actObservacion"
+        android:id="@+id/actSettings"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-        android:icon="@android:drawable/ic_menu_report_image"
-        android:title="@string/registroObservacion"/>
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/app_name"/>
 
 </menu>
