@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">AndroidDSD</string>    
-    <string name="action_settings">Settings</string>
     <string name="buscar">Buscar</string>
     <string name="numeroRemesa">Número de Remesa</string>
     <string name="numero">Número</string>
@@ -11,5 +10,9 @@
     <string name="moneda">Moneda</string>
     <string name="monto">Monto</string>
     <string name="estado">Estado</string>
+    
+    <string name="consultaRemesa">Consulta Remesa</string>
+    <string name="busquedaRemesa">Búsqueda Remesa</string>
+    <string name="registroObservacion">Registro Observación</string>
 
 </resources>

@@ -26,6 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.example.androiddsd.BusquedaRemesaActivity"
+            android:parentActivityName="com.example.androiddsd.MainActivity">
+            </activity>
     </application>
 
 </manifest>
