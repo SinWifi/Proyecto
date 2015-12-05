@@ -4,6 +4,7 @@ using System.Net;
 using System.IO;
 using System.Web.Script.Serialization;
 using System.Text;
+using System.Collections.Generic;
 
 namespace RESTServicesTest
 {
@@ -100,6 +101,27 @@ namespace RESTServicesTest
                 JavaScriptSerializer jsCatch = new JavaScriptSerializer();
                 String mensaje = jsCatch.Deserialize<String>(cadenaJsonCatch);
                 Assert.AreEqual("No es posible el envío, remesa CANCELADA", mensaje);
+            }
+        }
+
+        [TestMethod]
+        public void ListarObservaciones()
+        {
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:61010/Observaciones.svc/Observaciones");
+            req.Method = "GET";
+            HttpWebResponse res = null;
+            try
+            {
+                res = (HttpWebResponse)req.GetResponse();
+                StreamReader reader = new StreamReader(res.GetResponseStream());
+                string cadenaJson = reader.ReadToEnd();
+                JavaScriptSerializer js = new JavaScriptSerializer();
+                List<Observacion> mensaje = js.Deserialize<List<Observacion>>(cadenaJson);
+                Assert.AreEqual(3, mensaje.ToArray().Length);
+            }
+            catch (WebException e)
+            {
+
             }
         }
     }

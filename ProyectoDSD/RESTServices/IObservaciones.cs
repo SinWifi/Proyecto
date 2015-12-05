@@ -15,5 +15,9 @@ namespace RESTServices
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "Observaciones", ResponseFormat = WebMessageFormat.Json)]
         String CrearObservacion(Observacion observacion);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "Observaciones", ResponseFormat = WebMessageFormat.Json)]
+        List<Observacion> ListarObservaciones();
     }
 }
