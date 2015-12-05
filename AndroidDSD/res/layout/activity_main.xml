@@ -21,21 +21,20 @@
         android:layout_height="30dp"/>
     
     <Button 
-        android:id="@+id/btnConsulta"
+        android:id="@+id/btnObservacion"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/consultaRemesa"/>
+        android:text="@string/registroObservacion"/>
     
     <View 
         android:layout_width="match_parent"
         android:layout_height="30dp"/>
     
     <Button 
-        android:id="@+id/btnObservacion"
+        android:id="@+id/btnListado"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/registroObservacion"/>
-
+        android:text="@string/listadoObservaciones"/>
 </LinearLayout>

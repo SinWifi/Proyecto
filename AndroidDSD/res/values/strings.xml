@@ -3,6 +3,12 @@
 
     <string name="app_name">AndroidDSD</string>    
     <string name="buscar">Buscar</string>
+    <string name="grabar">Grabar</string>
+        
+    <string name="listadoObservaciones">Listado Observaciones</string>
+    <string name="busquedaRemesa">Búsqueda Remesa</string>
+    <string name="registroObservacion">Registro Observación</string>
+    
     <string name="numeroRemesa">Número de Remesa</string>
     <string name="numero">Número</string>
     <string name="fecha">Fecha</string>
@@ -11,8 +17,8 @@
     <string name="monto">Monto</string>
     <string name="estado">Estado</string>
     
-    <string name="consultaRemesa">Consulta Remesa</string>
-    <string name="busquedaRemesa">Búsqueda Remesa</string>
-    <string name="registroObservacion">Registro Observación</string>
+    <string name="remesa">Remesa</string>
+    <string name="observacion">Observación</string>
+    <string name="detalle">Detalle</string>
 
 </resources>
