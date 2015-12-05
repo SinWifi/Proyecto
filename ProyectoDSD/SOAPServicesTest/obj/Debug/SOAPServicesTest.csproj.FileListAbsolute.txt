@@ -21,3 +21,8 @@ D:\workspace\visual\ProyectoDSD\SOAPServicesTest\bin\Debug\SOAPServicesTest.pdb
 D:\workspace\visual\ProyectoDSD\SOAPServicesTest\obj\Debug\SOAPServicesTest.csprojResolveAssemblyReference.cache
 D:\workspace\visual\ProyectoDSD\SOAPServicesTest\obj\Debug\SOAPServicesTest.dll
 D:\workspace\visual\ProyectoDSD\SOAPServicesTest\obj\Debug\SOAPServicesTest.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServicesTest\bin\Debug\SOAPServicesTest.dll.config
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServicesTest\bin\Debug\SOAPServicesTest.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServicesTest\bin\Debug\SOAPServicesTest.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServicesTest\obj\Debug\SOAPServicesTest.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServicesTest\obj\Debug\SOAPServicesTest.pdb

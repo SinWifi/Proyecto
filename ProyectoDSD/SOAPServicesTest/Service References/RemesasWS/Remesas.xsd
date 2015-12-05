@@ -77,4 +77,36 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="ObtenerRemesaByUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tipoDoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numDoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pin" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRemesaByUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ObtenerRemesaByUsuarioResult" nillable="true" type="q9:Remesa" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarCobro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tipoDoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numDoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pin" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarCobroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GenerarCobroResult" nillable="true" type="q10:Remesa" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

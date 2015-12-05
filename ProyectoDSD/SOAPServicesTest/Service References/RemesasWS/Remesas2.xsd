@@ -21,11 +21,13 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="Agencia" nillable="true" type="tns:Agencia" />
       <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Fecha" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Moneda" nillable="true" type="tns:Moneda" />
       <xs:element minOccurs="0" name="Monto" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NumDoc" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Numero" type="xs:int" />
       <xs:element minOccurs="0" name="PIN" type="xs:int" />
+      <xs:element minOccurs="0" name="TipoDoc" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Remesa" nillable="true" type="tns:Remesa" />
@@ -41,4 +43,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfRemesa" nillable="true" type="tns:ArrayOfRemesa" />
+  <xs:complexType name="FechaLimiteException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DetalleError" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FechaLimiteException" nillable="true" type="tns:FechaLimiteException" />
 </xs:schema>

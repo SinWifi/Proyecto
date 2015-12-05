@@ -68,3 +68,15 @@ C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\Iesi.Col
 C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\DSD.AccesoDatos.pdb
 C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\bin\DSD.Entidades.pdb
 C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.dll.config
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\bin\DSD.AccesoDatos.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\bin\DSD.Entidades.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\bin\NHibernate.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\bin\DSD.AccesoDatos.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\bin\DSD.Entidades.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb

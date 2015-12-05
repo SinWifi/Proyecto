@@ -31,5 +31,15 @@ namespace SOAPServices
         [OperationContract]
         [FaultContract(typeof(HoraExcedidaException))]
         List<Remesa> ListarRemesas();
+
+        [OperationContract]
+        [FaultContract(typeof(HoraExcedidaException))]
+        [FaultContract(typeof(FechaLimiteException))]
+        Remesa ObtenerRemesaByUsuario(string tipoDoc, string numDoc, int pin);
+
+        [OperationContract]
+        [FaultContract(typeof(HoraExcedidaException))]
+        [FaultContract(typeof(FechaLimiteException))]
+        Remesa GenerarCobro(string tipoDoc, string numDoc, int pin);
     }
 }

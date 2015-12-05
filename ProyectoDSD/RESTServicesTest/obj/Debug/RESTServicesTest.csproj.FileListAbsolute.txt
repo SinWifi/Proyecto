@@ -12,3 +12,10 @@ C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\bin\Debu
 C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.dll
 C:\Users\USUARIO\Documents\GitHub\Proyecto\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\RESTServicesTest\bin\Debug\RESTServicesTest.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\RESTServicesTest\bin\Debug\RESTServicesTest.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\RESTServicesTest\bin\Debug\DSD.Entidades.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\RESTServicesTest\bin\Debug\DSD.Entidades.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.csprojResolveAssemblyReference.cache
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\RESTServicesTest\obj\Debug\RESTServicesTest.pdb

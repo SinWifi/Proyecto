@@ -8,6 +8,6 @@ public class ConexionUtil
 {
     public static string ObtenerCadena()
     {
-        return "Data Source=NVR-PC\\SQLSERVER2012;Initial Catalog=ProyectoDSD;Integrated Security=SSPI;";
+        return "Data Source=localhost;Initial Catalog=ProyectoDSD;Integrated Security=SSPI;";
     }
 }

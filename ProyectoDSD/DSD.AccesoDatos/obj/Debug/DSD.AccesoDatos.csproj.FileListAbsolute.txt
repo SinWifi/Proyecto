@@ -50,3 +50,12 @@ C:\Users\USUARIO\Desktop\PROYECTO-IRVIN\ProyectoDSD\DSD.AccesoDatos\bin\Debug\DS
 C:\Users\USUARIO\Desktop\PROYECTO-IRVIN\ProyectoDSD\DSD.AccesoDatos\obj\Debug\DSD.AccesoDatos.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Desktop\PROYECTO-IRVIN\ProyectoDSD\DSD.AccesoDatos\obj\Debug\DSD.AccesoDatos.dll
 C:\Users\USUARIO\Desktop\PROYECTO-IRVIN\ProyectoDSD\DSD.AccesoDatos\obj\Debug\DSD.AccesoDatos.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.AccesoDatos\bin\Debug\DSD.AccesoDatos.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.AccesoDatos\bin\Debug\DSD.AccesoDatos.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.AccesoDatos\bin\Debug\DSD.Entidades.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.AccesoDatos\bin\Debug\Iesi.Collections.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.AccesoDatos\bin\Debug\NHibernate.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.AccesoDatos\bin\Debug\DSD.Entidades.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.AccesoDatos\obj\Debug\DSD.AccesoDatos.csprojResolveAssemblyReference.cache
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.AccesoDatos\obj\Debug\DSD.AccesoDatos.dll
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.AccesoDatos\obj\Debug\DSD.AccesoDatos.pdb

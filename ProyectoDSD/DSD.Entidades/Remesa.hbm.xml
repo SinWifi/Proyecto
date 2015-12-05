@@ -13,5 +13,7 @@
     <many-to-one name ="Moneda" column="IDMoneda" />
     <property name="Monto" column="Monto" />
     <property name="Estado" column="Estado" />
+    <property name="TipoDoc" column="TipDocBene" />
+    <property name="NumDoc" column="NumDocBene" />
   </class>
 </hibernate-mapping>

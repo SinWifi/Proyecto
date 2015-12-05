@@ -52,6 +52,30 @@
   <wsdl:message name="IRemesas_ListarRemesas_HoraExcedidaExceptionFault_FaultMessage">
     <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/" name="detail" element="q5:HoraExcedidaException" />
   </wsdl:message>
+  <wsdl:message name="IRemesas_ObtenerRemesaByUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRemesaByUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IRemesas_ObtenerRemesaByUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRemesaByUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRemesas_ObtenerRemesaByUsuario_FechaLimiteExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/" name="detail" element="q6:FechaLimiteException" />
+  </wsdl:message>
+  <wsdl:message name="IRemesas_ObtenerRemesaByUsuario_HoraExcedidaExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/" name="detail" element="q7:HoraExcedidaException" />
+  </wsdl:message>
+  <wsdl:message name="IRemesas_GenerarCobro_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarCobro" />
+  </wsdl:message>
+  <wsdl:message name="IRemesas_GenerarCobro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarCobroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRemesas_GenerarCobro_HoraExcedidaExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/" name="detail" element="q8:HoraExcedidaException" />
+  </wsdl:message>
+  <wsdl:message name="IRemesas_GenerarCobro_FechaLimiteExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/" name="detail" element="q9:FechaLimiteException" />
+  </wsdl:message>
   <wsdl:portType name="IRemesas">
     <wsdl:operation name="CrearRemesa">
       <wsdl:input wsaw:Action="http://tempuri.org/IRemesas/CrearRemesa" message="tns:IRemesas_CrearRemesa_InputMessage" />
@@ -77,6 +101,18 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IRemesas/ListarRemesas" message="tns:IRemesas_ListarRemesas_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IRemesas/ListarRemesasResponse" message="tns:IRemesas_ListarRemesas_OutputMessage" />
       <wsdl:fault wsaw:Action="http://tempuri.org/IRemesas/ListarRemesasHoraExcedidaExceptionFault" name="HoraExcedidaExceptionFault" message="tns:IRemesas_ListarRemesas_HoraExcedidaExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRemesaByUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRemesas/ObtenerRemesaByUsuario" message="tns:IRemesas_ObtenerRemesaByUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRemesas/ObtenerRemesaByUsuarioResponse" message="tns:IRemesas_ObtenerRemesaByUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IRemesas/ObtenerRemesaByUsuarioFechaLimiteExceptionFault" name="FechaLimiteExceptionFault" message="tns:IRemesas_ObtenerRemesaByUsuario_FechaLimiteExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IRemesas/ObtenerRemesaByUsuarioHoraExcedidaExceptionFault" name="HoraExcedidaExceptionFault" message="tns:IRemesas_ObtenerRemesaByUsuario_HoraExcedidaExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCobro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRemesas/GenerarCobro" message="tns:IRemesas_GenerarCobro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRemesas/GenerarCobroResponse" message="tns:IRemesas_GenerarCobro_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IRemesas/GenerarCobroHoraExcedidaExceptionFault" name="HoraExcedidaExceptionFault" message="tns:IRemesas_GenerarCobro_HoraExcedidaExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IRemesas/GenerarCobroFechaLimiteExceptionFault" name="FechaLimiteExceptionFault" message="tns:IRemesas_GenerarCobro_FechaLimiteExceptionFault_FaultMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IRemesas" type="tns:IRemesas">
@@ -139,6 +175,36 @@
       </wsdl:output>
       <wsdl:fault name="HoraExcedidaExceptionFault">
         <soap:fault use="literal" name="HoraExcedidaExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRemesaByUsuario">
+      <soap:operation soapAction="http://tempuri.org/IRemesas/ObtenerRemesaByUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FechaLimiteExceptionFault">
+        <soap:fault use="literal" name="FechaLimiteExceptionFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="HoraExcedidaExceptionFault">
+        <soap:fault use="literal" name="HoraExcedidaExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCobro">
+      <soap:operation soapAction="http://tempuri.org/IRemesas/GenerarCobro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="HoraExcedidaExceptionFault">
+        <soap:fault use="literal" name="HoraExcedidaExceptionFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="FechaLimiteExceptionFault">
+        <soap:fault use="literal" name="FechaLimiteExceptionFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
   </wsdl:binding>

@@ -21,6 +21,10 @@ public class Remesa
     public decimal Monto { get; set; }
     [DataMember]
     public String Estado { get; set; }
+    [DataMember]
+    public string TipoDoc { get; set; }
+    [DataMember]
+    public string NumDoc { get; set; }
 }
 
 [DataContract]
@@ -30,6 +34,19 @@ public class HoraExcedidaException {
     public string DetalleError;
 
     public HoraExcedidaException(string error)
+    {
+        DetalleError = error;
+    }
+}
+
+[DataContract]
+public class FechaLimiteException
+{
+
+    [DataMember]
+    public string DetalleError;
+
+    public FechaLimiteException(string error)
     {
         DetalleError = error;
     }

@@ -79,5 +79,50 @@ namespace SOAPServices
                 throw new FaultException<HoraExcedidaException>(new HoraExcedidaException("La informaci\u00f3n mostrada no puede ser actualizada"));
             }
         }
+
+        public Remesa ObtenerRemesaByUsuario(string tipoDoc, string numDoc, int pin)
+        {
+            Remesa remesa = DAO.ObtenerByUsuario(tipoDoc, numDoc, pin);
+            if (remesa == null)
+            {
+                return null;
+            }
+
+            validarHora();
+            validarFechaLimite(remesa);
+
+            return remesa;
+        }
+
+        public Remesa GenerarCobro(string tipoDoc, string numDoc, int pin)
+        {
+            Remesa remesa = DAO.ObtenerByUsuario(tipoDoc, numDoc, pin);
+            if (remesa == null)
+            {
+                return null;
+            }
+
+            validarHora();
+            validarFechaLimite(remesa);
+
+            remesa.Estado = "Cobrada";
+            remesa.Fecha = Convert.ToDateTime(remesa.Fecha).ToString("yyy-MM-dd");
+            return DAO.Modificar(remesa);
+        }
+
+        private void validarFechaLimite(Remesa remesa)
+        {
+            DateTime fechaRemesa = Convert.ToDateTime(remesa.Fecha);
+            DateTime fechaActual = DateTime.Now;
+
+            TimeSpan ts = fechaActual - fechaRemesa;
+
+            int diferenciaDias = ts.Days;
+
+            if (diferenciaDias > 10)
+            {
+                throw new FaultException<FechaLimiteException>(new FechaLimiteException("Esta remesa ha sido extornada"));
+            }
+        }
     }
 }
