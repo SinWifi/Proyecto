@@ -44,6 +44,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -62,10 +63,15 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Observaciones.svc" />
     <Content Include="Remesas.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IObservaciones.cs" />
+    <Compile Include="Observaciones.svc.cs">
+      <DependentUpon>Observaciones.svc</DependentUpon>
+    </Compile>
     <Compile Include="Remesas.svc.cs">
       <DependentUpon>Remesas.svc</DependentUpon>
     </Compile>

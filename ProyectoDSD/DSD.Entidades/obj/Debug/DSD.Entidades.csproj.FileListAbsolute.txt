@@ -24,3 +24,4 @@ G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.Entidades\bin\Debug\DSD.Ent
 G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.Entidades\bin\Debug\DSD.Entidades.pdb
 G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.Entidades\obj\Debug\DSD.Entidades.dll
 G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.Entidades\obj\Debug\DSD.Entidades.pdb
+G:\Disco E\worskpace_spring\Proyecto\ProyectoDSD\DSD.Entidades\obj\Debug\DSD.Entidades.csprojResolveAssemblyReference.cache
