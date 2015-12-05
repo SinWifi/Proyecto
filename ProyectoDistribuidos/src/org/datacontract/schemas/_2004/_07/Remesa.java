@@ -18,9 +18,13 @@ public class Remesa  implements java.io.Serializable {
 
     private java.math.BigDecimal monto;
 
+    private java.lang.String numDoc;
+
     private java.lang.Integer numero;
 
     private java.lang.Integer PIN;
+
+    private java.lang.String tipoDoc;
 
     public Remesa() {
     }
@@ -31,15 +35,19 @@ public class Remesa  implements java.io.Serializable {
            java.lang.String fecha,
            org.datacontract.schemas._2004._07.Moneda moneda,
            java.math.BigDecimal monto,
+           java.lang.String numDoc,
            java.lang.Integer numero,
-           java.lang.Integer PIN) {
+           java.lang.Integer PIN,
+           java.lang.String tipoDoc) {
            this.agencia = agencia;
            this.estado = estado;
            this.fecha = fecha;
            this.moneda = moneda;
            this.monto = monto;
+           this.numDoc = numDoc;
            this.numero = numero;
            this.PIN = PIN;
+           this.tipoDoc = tipoDoc;
     }
 
 
@@ -144,6 +152,26 @@ public class Remesa  implements java.io.Serializable {
 
 
     /**
+     * Gets the numDoc value for this Remesa.
+     * 
+     * @return numDoc
+     */
+    public java.lang.String getNumDoc() {
+        return numDoc;
+    }
+
+
+    /**
+     * Sets the numDoc value for this Remesa.
+     * 
+     * @param numDoc
+     */
+    public void setNumDoc(java.lang.String numDoc) {
+        this.numDoc = numDoc;
+    }
+
+
+    /**
      * Gets the numero value for this Remesa.
      * 
      * @return numero
@@ -182,6 +210,26 @@ public class Remesa  implements java.io.Serializable {
         this.PIN = PIN;
     }
 
+
+    /**
+     * Gets the tipoDoc value for this Remesa.
+     * 
+     * @return tipoDoc
+     */
+    public java.lang.String getTipoDoc() {
+        return tipoDoc;
+    }
+
+
+    /**
+     * Sets the tipoDoc value for this Remesa.
+     * 
+     * @param tipoDoc
+     */
+    public void setTipoDoc(java.lang.String tipoDoc) {
+        this.tipoDoc = tipoDoc;
+    }
+
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof Remesa)) return false;
@@ -209,12 +257,18 @@ public class Remesa  implements java.io.Serializable {
             ((this.monto==null && other.getMonto()==null) || 
              (this.monto!=null &&
               this.monto.equals(other.getMonto()))) &&
+            ((this.numDoc==null && other.getNumDoc()==null) || 
+             (this.numDoc!=null &&
+              this.numDoc.equals(other.getNumDoc()))) &&
             ((this.numero==null && other.getNumero()==null) || 
              (this.numero!=null &&
               this.numero.equals(other.getNumero()))) &&
             ((this.PIN==null && other.getPIN()==null) || 
              (this.PIN!=null &&
-              this.PIN.equals(other.getPIN())));
+              this.PIN.equals(other.getPIN()))) &&
+            ((this.tipoDoc==null && other.getTipoDoc()==null) || 
+             (this.tipoDoc!=null &&
+              this.tipoDoc.equals(other.getTipoDoc())));
         __equalsCalc = null;
         return _equals;
     }
@@ -241,11 +295,17 @@ public class Remesa  implements java.io.Serializable {
         if (getMonto() != null) {
             _hashCode += getMonto().hashCode();
         }
+        if (getNumDoc() != null) {
+            _hashCode += getNumDoc().hashCode();
+        }
         if (getNumero() != null) {
             _hashCode += getNumero().hashCode();
         }
         if (getPIN() != null) {
             _hashCode += getPIN().hashCode();
+        }
+        if (getTipoDoc() != null) {
+            _hashCode += getTipoDoc().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -293,6 +353,13 @@ public class Remesa  implements java.io.Serializable {
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("numDoc");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "NumDoc"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("numero");
         elemField.setXmlName(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "Numero"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
@@ -305,6 +372,13 @@ public class Remesa  implements java.io.Serializable {
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
         elemField.setMinOccurs(0);
         elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tipoDoc");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "TipoDoc"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
     }
 

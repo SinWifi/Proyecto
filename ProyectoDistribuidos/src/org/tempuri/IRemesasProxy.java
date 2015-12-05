@@ -74,5 +74,17 @@ public class IRemesasProxy implements org.tempuri.IRemesas {
     return iRemesas.listarRemesas();
   }
   
+  public org.datacontract.schemas._2004._07.Remesa obtenerRemesaByUsuario(java.lang.String tipoDoc, java.lang.String numDoc, java.lang.Integer pin) throws java.rmi.RemoteException, org.datacontract.schemas._2004._07.HoraExcedidaException, org.datacontract.schemas._2004._07.FechaLimiteException{
+    if (iRemesas == null)
+      _initIRemesasProxy();
+    return iRemesas.obtenerRemesaByUsuario(tipoDoc, numDoc, pin);
+  }
+  
+  public org.datacontract.schemas._2004._07.Remesa generarCobro(java.lang.String tipoDoc, java.lang.String numDoc, java.lang.Integer pin) throws java.rmi.RemoteException, org.datacontract.schemas._2004._07.HoraExcedidaException, org.datacontract.schemas._2004._07.FechaLimiteException{
+    if (iRemesas == null)
+      _initIRemesasProxy();
+    return iRemesas.generarCobro(tipoDoc, numDoc, pin);
+  }
+  
   
 }

@@ -70,7 +70,7 @@
 									<td>
 										<label for="name" class="blocklabel">Tipo de documento: </label>
 										<p class="">
-											<select name="sucursalname" class="input_bg" id="sucursal">
+											<select name="tipoDoc" class="input_bg" id="tipoDoc">
 												<option value="dni">DNI</option>
 												<option value="ruc">RUC</option>
 											</select>
@@ -78,8 +78,8 @@
 									</td>
 									<td>
 										<p>
-											<input name="SendRemesaCobrada1" type="button" value="Buscar"
-											class="comment_submit" id="btnMostarTablaRemesaCobrada1" />
+											<input name="validarPINUsuario" type="button" value="Buscar"
+											class="comment_submit" id="validarPINUsuario" />
 										</p>
 									</td>
 								</tr>
@@ -87,8 +87,8 @@
 									<td>
 										<label for="name" class="blocklabel">Número de documento: </label>
 										<p class="">
-											<input name="transaccion" class="input_bg" type="text"
-											id="idtransaccion" value='' />
+											<input name="numDoc" class="input_bg" type="text"
+											id="numDoc"/>
 										</p>
 									</td>
 									<td></td>
@@ -97,8 +97,18 @@
 									<td>
 										<label for="name" class="blocklabel">PIN: </label>
 										<p class="">
-											<input name="fechadesdename" class="input_bg" type="text"
-											id="idfechadesde" value='' />
+											<input name="PIN" class="input_bg" type="text"
+											id="PIN" value='' />
+										</p>
+									</td>
+									<td></td>
+								</tr>
+								<tr id="verMontoActual" style="display: none;">
+									<td>
+										<label for="name" class="blocklabel">Monto: </label>
+										<p class="">
+											<input name="monto" class="input_bg" type="text" readonly="readonly"
+											id="monto" />
 										</p>
 									</td>
 									<td></td>
@@ -108,9 +118,9 @@
 							<div class="clearfix"></div>
 
 							<br>
-							<p>
-								<input name="SendRemesaCobrada2" type="button" value="Generar Cobro"
-									class="comment_submit" id="btnMostarTablaRemesaCobrada2" />
+							<p id="mostrarBotonGenerarCobro" style="display: none;">
+								<input name="generarCobro" type="button" value="Generar Cobro"
+									class="comment_submit" id="generarCobro" />
 							</p>
 
 						</fieldset>
@@ -118,37 +128,9 @@
 					</form>
 
 				</div>
-
-<!-- 				<div class="clearfix divider_line8"></div> -->
-
-
-<!-- 				<div id="tablaBusquedaRemesaPorCobrar" style="display: none" class="one_full"> -->
-
-<!-- 					<div class="table-style "> -->
-<!-- 						<table class="table-list"> -->
-<!-- 							<tr> -->
-<!-- 								<th>ID transacción</th> -->
-<!-- 								<th>Fecha transacción</th> -->
-<!-- 								<th>Beneficiario</th> -->
-<!-- 								<th>Monto</th> -->
-<!-- 								<th>Cuenta origen</th> -->
-<!-- 								<th>Cuenta destino</th> -->
-<!-- 								<th>Código PIN</th> -->
-<!-- 							</tr> -->
-<!-- 							<tbody id="tBodyBusqueda"> -->
-
-<!-- 							</tbody> -->
-
-<!-- 						</table> -->
-<!-- 					</div> -->
-
-<!-- 				</div> -->
-				<!-- end tables -->
 			</div>
 
 		</div>
-		<!-- end content area -->
-
 
 	</div>
 

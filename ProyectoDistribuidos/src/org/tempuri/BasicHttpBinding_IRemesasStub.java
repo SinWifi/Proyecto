@@ -16,7 +16,7 @@ public class BasicHttpBinding_IRemesasStub extends org.apache.axis.client.Stub i
     static org.apache.axis.description.OperationDesc [] _operations;
 
     static {
-        _operations = new org.apache.axis.description.OperationDesc[5];
+        _operations = new org.apache.axis.description.OperationDesc[7];
         _initOperationDesc1();
     }
 
@@ -145,6 +145,70 @@ public class BasicHttpBinding_IRemesasStub extends org.apache.axis.client.Stub i
                      ));
         _operations[4] = oper;
 
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("ObtenerRemesaByUsuario");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://tempuri.org/", "tipoDoc"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        param.setNillable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://tempuri.org/", "numDoc"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        param.setNillable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://tempuri.org/", "pin"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), java.lang.Integer.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "Remesa"));
+        oper.setReturnClass(org.datacontract.schemas._2004._07.Remesa.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "ObtenerRemesaByUsuarioResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        oper.addFault(new org.apache.axis.description.FaultDesc(
+                      new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "HoraExcedidaException"),
+                      "org.datacontract.schemas._2004._07.HoraExcedidaException",
+                      new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "HoraExcedidaException"), 
+                      true
+                     ));
+        oper.addFault(new org.apache.axis.description.FaultDesc(
+                      new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "FechaLimiteException"),
+                      "org.datacontract.schemas._2004._07.FechaLimiteException",
+                      new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "FechaLimiteException"), 
+                      true
+                     ));
+        _operations[5] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GenerarCobro");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://tempuri.org/", "tipoDoc"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        param.setNillable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://tempuri.org/", "numDoc"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        param.setOmittable(true);
+        param.setNillable(true);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://tempuri.org/", "pin"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), java.lang.Integer.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
+        oper.setReturnType(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "Remesa"));
+        oper.setReturnClass(org.datacontract.schemas._2004._07.Remesa.class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "GenerarCobroResult"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        oper.addFault(new org.apache.axis.description.FaultDesc(
+                      new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "HoraExcedidaException"),
+                      "org.datacontract.schemas._2004._07.HoraExcedidaException",
+                      new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "HoraExcedidaException"), 
+                      true
+                     ));
+        oper.addFault(new org.apache.axis.description.FaultDesc(
+                      new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "FechaLimiteException"),
+                      "org.datacontract.schemas._2004._07.FechaLimiteException",
+                      new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "FechaLimiteException"), 
+                      true
+                     ));
+        _operations[6] = oper;
+
     }
 
     public BasicHttpBinding_IRemesasStub() throws org.apache.axis.AxisFault {
@@ -191,6 +255,13 @@ public class BasicHttpBinding_IRemesasStub extends org.apache.axis.client.Stub i
             qName2 = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "Remesa");
             cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
             cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "FechaLimiteException");
+            cachedSerQNames.add(qName);
+            cls = org.datacontract.schemas._2004._07.FechaLimiteException.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
 
             qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/", "HoraExcedidaException");
             cachedSerQNames.add(qName);
@@ -476,6 +547,96 @@ public class BasicHttpBinding_IRemesasStub extends org.apache.axis.client.Stub i
          }
         if (axisFaultException.detail instanceof org.datacontract.schemas._2004._07.HoraExcedidaException) {
               throw (org.datacontract.schemas._2004._07.HoraExcedidaException) axisFaultException.detail;
+         }
+   }
+  throw axisFaultException;
+}
+    }
+
+    public org.datacontract.schemas._2004._07.Remesa obtenerRemesaByUsuario(java.lang.String tipoDoc, java.lang.String numDoc, java.lang.Integer pin) throws java.rmi.RemoteException, org.datacontract.schemas._2004._07.HoraExcedidaException, org.datacontract.schemas._2004._07.FechaLimiteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[5]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://tempuri.org/IRemesas/ObtenerRemesaByUsuario");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://tempuri.org/", "ObtenerRemesaByUsuario"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {tipoDoc, numDoc, pin});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (org.datacontract.schemas._2004._07.Remesa) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (org.datacontract.schemas._2004._07.Remesa) org.apache.axis.utils.JavaUtils.convert(_resp, org.datacontract.schemas._2004._07.Remesa.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+    if (axisFaultException.detail != null) {
+        if (axisFaultException.detail instanceof java.rmi.RemoteException) {
+              throw (java.rmi.RemoteException) axisFaultException.detail;
+         }
+        if (axisFaultException.detail instanceof org.datacontract.schemas._2004._07.HoraExcedidaException) {
+              throw (org.datacontract.schemas._2004._07.HoraExcedidaException) axisFaultException.detail;
+         }
+        if (axisFaultException.detail instanceof org.datacontract.schemas._2004._07.FechaLimiteException) {
+              throw (org.datacontract.schemas._2004._07.FechaLimiteException) axisFaultException.detail;
+         }
+   }
+  throw axisFaultException;
+}
+    }
+
+    public org.datacontract.schemas._2004._07.Remesa generarCobro(java.lang.String tipoDoc, java.lang.String numDoc, java.lang.Integer pin) throws java.rmi.RemoteException, org.datacontract.schemas._2004._07.HoraExcedidaException, org.datacontract.schemas._2004._07.FechaLimiteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[6]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://tempuri.org/IRemesas/GenerarCobro");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://tempuri.org/", "GenerarCobro"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {tipoDoc, numDoc, pin});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (org.datacontract.schemas._2004._07.Remesa) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (org.datacontract.schemas._2004._07.Remesa) org.apache.axis.utils.JavaUtils.convert(_resp, org.datacontract.schemas._2004._07.Remesa.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+    if (axisFaultException.detail != null) {
+        if (axisFaultException.detail instanceof java.rmi.RemoteException) {
+              throw (java.rmi.RemoteException) axisFaultException.detail;
+         }
+        if (axisFaultException.detail instanceof org.datacontract.schemas._2004._07.HoraExcedidaException) {
+              throw (org.datacontract.schemas._2004._07.HoraExcedidaException) axisFaultException.detail;
+         }
+        if (axisFaultException.detail instanceof org.datacontract.schemas._2004._07.FechaLimiteException) {
+              throw (org.datacontract.schemas._2004._07.FechaLimiteException) axisFaultException.detail;
          }
    }
   throw axisFaultException;

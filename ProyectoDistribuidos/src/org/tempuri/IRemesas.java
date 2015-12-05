@@ -13,4 +13,6 @@ public interface IRemesas extends java.rmi.Remote {
     public org.datacontract.schemas._2004._07.Remesa modificarRemesa(java.lang.Integer numero, java.lang.Integer pin, java.util.Calendar fecha, org.datacontract.schemas._2004._07.Agencia agencia, org.datacontract.schemas._2004._07.Moneda moneda, java.math.BigDecimal monto, java.lang.String estado) throws java.rmi.RemoteException, org.datacontract.schemas._2004._07.HoraExcedidaException;
     public void eliminarRemesa(java.lang.Integer numero) throws java.rmi.RemoteException, org.datacontract.schemas._2004._07.HoraExcedidaException;
     public org.datacontract.schemas._2004._07.Remesa[] listarRemesas() throws java.rmi.RemoteException, org.datacontract.schemas._2004._07.HoraExcedidaException;
+    public org.datacontract.schemas._2004._07.Remesa obtenerRemesaByUsuario(java.lang.String tipoDoc, java.lang.String numDoc, java.lang.Integer pin) throws java.rmi.RemoteException, org.datacontract.schemas._2004._07.HoraExcedidaException, org.datacontract.schemas._2004._07.FechaLimiteException;
+    public org.datacontract.schemas._2004._07.Remesa generarCobro(java.lang.String tipoDoc, java.lang.String numDoc, java.lang.Integer pin) throws java.rmi.RemoteException, org.datacontract.schemas._2004._07.HoraExcedidaException, org.datacontract.schemas._2004._07.FechaLimiteException;
 }

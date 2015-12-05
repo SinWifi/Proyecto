@@ -46,7 +46,68 @@ $(document).ready(function($) {
 		}
 		
 	})
+	
+	$("#validarPINUsuario").on('click',function(){
+		
+		tipoDoc = $("#tipoDoc").val();
+		numDoc = $("#numDoc").val();
+		PIN = $("#PIN").val();
+		
+		if(tipoDoc != "" && numDoc != "" && PIN != ""){
+			$.ajax({
+				type: 'POST',
+				url: urlHome + "cobrarRemesa/validarPIN",
+				dataType: 'json',
+				data: {"tipoDoc" : tipoDoc,"numDoc" : numDoc,"PIN" : PIN},
+				success: function(result){
+					if(result.resultado == "0"){
+						alert("Los datos ingresados no se encuentran en nuestro registro.");
+					}else if(result.resultado == "1"){
+						$("#monto").val(result.remesa.Monto);
+						$("#verMontoActual").show();
+						$("#mostrarBotonGenerarCobro").show();
+					}else if(result.resultado == "2"){
+						alert(result.mensaje);
+					}else if(result.resultado == "3"){
+						alert(result.mensaje);
+					}
+				}
+			});
+		}else{
+			alert('Algunos de los datos ingresados son incorrectos. Verifica nuevamente');
+		}
+	});
 
+	$("#generarCobro").on('click',function(){
+		tipoDoc = $("#tipoDoc").val();
+		numDoc = $("#numDoc").val();
+		PIN = $("#PIN").val();
+		
+		if(tipoDoc != "" && numDoc != "" && PIN != ""){
+			$.ajax({
+				type: 'POST',
+				url: urlHome + "cobrarRemesa/validarPIN",
+				dataType: 'json',
+				data: {"tipoDoc" : tipoDoc,"numDoc" : numDoc,"PIN" : PIN},
+				success: function(result){
+					if(result.resultado == "0"){
+						alert("Los datos ingresados no se encuentran en nuestro registro.");
+					}else if(result.resultado == "1"){
+						$("#monto").val(result.remesa.Monto);
+						$("#verMontoActual").show();
+						alert('Se ha realizado el cobro de remesa de manera correcta.');
+					}else if(result.resultado == "2"){
+						alert(result.mensaje);
+					}else if(result.resultado == "3"){
+						alert(result.mensaje);
+					}
+				}
+			});
+		}else{
+			alert('Algunos de los datos ingresados son incorrectos. Verifica nuevamente');
+		}
+	});
+	
 });
 
 
